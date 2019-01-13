@@ -45,7 +45,7 @@ namespace forward_list {
             q = p;
 
         }
-        q->next = nullptrptr;  // 将最后一个结点指向nullptr
+        q->next = nullptr;  // 将最后一个结点指向nullptr
         return head;
     }
 
@@ -54,7 +54,7 @@ namespace forward_list {
         int len = 0;
         node *p;
         p = head->next;
-        while (p != nullptrptr) {
+        while (p != nullptr) {
             len++;
             p = p->next;
         }
